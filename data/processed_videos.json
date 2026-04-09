@@ -1,1 +1,74 @@
-{"processed": {}}
+{
+  "processed": {
+    "x4nf9Korgz0": {
+      "title": "[김현석의 월스트리트나우-4월9일] 휴전에도 해협 통과 4척뿐",
+      "channel": "한경글로벌마켓",
+      "processed_at": "2026-04-09T12:00:00Z"
+    },
+    "_KfExsQ9gyY": {
+      "title": "[빈난새의 개장전요것만-4월8일] 휴전 후 JPM 전술적 강세 복귀",
+      "channel": "한경글로벌마켓",
+      "processed_at": "2026-04-09T12:00:00Z"
+    },
+    "dEmsJh86ILU": {
+      "title": "[김현석의 월스트리트나우-4월8일] 2주 휴전 기대감",
+      "channel": "한경글로벌마켓",
+      "processed_at": "2026-04-09T12:00:00Z"
+    },
+    "pNYw4U78jCQ": {
+      "title": "[빈난새의 개장전요것만-4월7일] 이란 소통채널 폐쇄",
+      "channel": "한경글로벌마켓",
+      "processed_at": "2026-04-09T12:00:00Z"
+    },
+    "8UNBjbZ2gto": {
+      "title": "[4월 8일 수요일 한국시황] 미국 이란 휴전 소식에 +6.9% 급등!",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z"
+    },
+    "uDNJN1c6gQQ": {
+      "title": "[4월 8일 수요일 미국시황] 유가 폭락!! 이란, 미국 휴전 합의!",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z"
+    },
+    "YQ1Td1Vj1Kw": {
+      "title": "전쟁·고환율의 시대! 투자자는 지금 어떻게 대응해야 할까?",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z"
+    },
+    "LcMq_3rNi5Y": {
+      "title": "[4월 7일 화요일 한국시황] 경이로운 실적에도 주저 앉는 삼성전자?!",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z"
+    },
+    "g9DRNU2FK3g": {
+      "title": "떨어지면 즐거워야 진짜 고수다",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z",
+      "skipped": "shorts"
+    },
+    "JZOjWQf2bgE": {
+      "title": "[LIVE 4월 9일 목요일 미국시황]",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z",
+      "skipped": "live_duplicate"
+    },
+    "llwNsHtQDcg": {
+      "title": "[LIVE 4월 8일 수요일 미국시황]",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z",
+      "skipped": "live_duplicate"
+    },
+    "b4A0IFkQFAY": {
+      "title": "[LIVE 4월 7일 화요일 미국시황]",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z",
+      "skipped": "live_duplicate"
+    },
+    "zg0n2YPEv0Q": {
+      "title": "[LIVE 4월 6일 월요일 한국장 전]",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T12:00:00Z",
+      "skipped": "live_duplicate"
+    }
+  }
+}
