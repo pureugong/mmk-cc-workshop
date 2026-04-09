@@ -12,6 +12,7 @@
     }
   ],
   "keywords": ["주식", "투자", "시장"],
-  "slack_channel": "#general",
+  "slack_channel": "#cc-workshop",
+  "slack_channel_id": "C0ARST52WGJ",
   "max_videos_per_check": 5
 }
