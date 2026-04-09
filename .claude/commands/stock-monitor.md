@@ -1,6 +1,6 @@
 # /stock-monitor - 증시 유튜브 모니터링 메인 오케스트레이터
 
-등록된 한국 증시 유튜브 채널에서 새 영상을 감지하고, 자막 추출 → 요약 → Slack 알림 → Notion 저장까지 전체 파이프라인을 실행합니다.
+등록된 한국 증시 유튜브 채널에서 새 영상을 감지하고, 자막 추출 → 요약 → Telegram 알림 → Slack 알림 → Notion 저장까지 전체 파이프라인을 실행합니다.
 
 ## 전체 흐름
 
@@ -23,10 +23,20 @@ mmk youtube metadata "<video_url>" -o json
 - **핵심 포인트**: 3-5개 bullet points
 - **시장 영향 분석**: 투자자 관점 시사점 1-2문장
 
-#### 2c. Slack 알림 전송
-MCP 도구 `slack_send_message_draft`를 사용합니다.
-- `config/channels.json`에서 `slack_channel_id` 읽기
-- 채널 ID가 비어있으면 이 단계를 건너뛰고 경고 메시지 출력
+#### 2c. Telegram 알림 전송
+`config/channels.json`에서 `telegram_bot_token`과 `telegram_chat_id`를 읽습니다.
+- 값이 비어있으면 이 단계를 건너뛰고 경고 메시지 출력
+- `curl`로 Telegram Bot API `sendMessage`를 호출하여 메시지 전송
+
+```bash
+curl -s -X POST "https://api.telegram.org/bot{telegram_bot_token}/sendMessage" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "chat_id": "{telegram_chat_id}",
+    "text": "메시지 내용",
+    "parse_mode": "Markdown"
+  }'
+```
 
 메시지 형식:
 ```
@@ -44,15 +54,20 @@ MCP 도구 `slack_send_message_draft`를 사용합니다.
 *시장 영향:*
 {market_impact}
 
-<{video_url}|원본 영상 보기>
+[원본 영상 보기]({video_url})
 ```
 
-#### 2d. Notion 저장
+#### 2d. Slack 알림 전송
+MCP 도구 `slack_send_message_draft`를 사용합니다.
+- `config/channels.json`에서 `slack_channel_id` 읽기
+- 채널 ID가 비어있으면 이 단계를 건너뛰고 경고 메시지 출력
+
+#### 2e. Notion 저장
 MCP 도구 `notion-create-pages`를 사용합니다.
 - Database ID: `4a4ce38b02334900b473aafeb2a8f2ea`
 - 속성: 제목, 채널명(Select), 요약, 핵심 포인트, 영상 URL, 발행일, 처리일(오늘)
 
-#### 2e. 처리 완료 기록
+#### 2f. 처리 완료 기록
 `data/processed.json` 파일을 읽고 해당 video_id를 `processed_ids` 배열에 추가하고, `last_check`를 현재 시간으로 업데이트한 뒤 저장합니다.
 
 ### Step 3: 결과 보고
@@ -63,6 +78,7 @@ MCP 도구 `notion-create-pages`를 사용합니다.
 - 처리된 영상: N건
   1. [채널명] 제목
   2. ...
+- Telegram 알림: 전송됨/건너뜀
 - Slack 알림: 전송됨/건너뜀
 - Notion 저장: 완료
 ```
