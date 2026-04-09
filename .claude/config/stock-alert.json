@@ -17,7 +17,7 @@
     }
   ],
   "lookback_hours": 1,
-  "slack_channel": "#stock-alerts",
-  "notion_database_id": "",
+  "slack_channel": "C0AS5FPAYNM",
+  "notion_database_id": "c65af1d70fe6498f9c3f5a587d495231",
   "max_transcript_chars": 8000
 }
