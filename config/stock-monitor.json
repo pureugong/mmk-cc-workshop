@@ -17,7 +17,8 @@
     }
   ],
   "topic_keywords": ["코스피", "나스닥", "S&P", "반도체", "AI", "금리", "환율", "매매", "실적", "ETF"],
-  "slack_channel": "stock-alerts",
+  "slack_channel": "mkk-workshop",
+  "slack_channel_id": "C0ARW7321KN",
   "notion_db_id": "2ffefd7ae792443aa9a5490ae9f865f8",
   "notion_data_source_id": "d68bdcec-9503-4ab8-b13e-530d40bdfa23",
   "max_videos_per_scan": 5
