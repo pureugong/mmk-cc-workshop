@@ -41,6 +41,44 @@ mmk youtube videotype <youtube-url>
 - `mmk paymint ...` — 사용 불가
 - `mmk threads ...` — 사용 불가
 
+## 증시 유튜브 모니터링 자동화
+
+한국 증시 관련 YouTube 채널의 특정 콘텐츠를 자동 모니터링하여 자막 요약 → Slack 알림 → Notion 저장을 수행합니다.
+
+### 모니터링 대상 채널 및 콘텐츠
+
+| 채널 | 콘텐츠 | 필터 키워드 |
+|------|--------|------------|
+| 한경글로벌마켓 | 빈난새의 개장전요것만, 김현석의 월스트리트나우 | 개장전요것만, 월스트리트나우 |
+| 한국경제TV | 당잠사 | 당잠사 |
+| 증시각도기TV | 증시각도기 | 증시각도기 |
+
+### 설정 파일
+
+- `config/channels.json` — 채널, 키워드, Slack/Notion 설정
+- `data/processed_videos.json` — 처리 완료된 영상 ID 추적
+
+### 연동 서비스
+
+- **Slack**: #경제소식 채널 (MCP 도구 사용)
+- **Notion**: "증시 유튜브 요약" 데이터베이스 (MCP 도구 사용)
+  - DB URL: https://www.notion.so/84678c8444774ef591e75bdf4fdba8db
+  - Data Source ID: `460605fe-18f2-4bfe-8534-4f5e265149f0`
+
+### Claude Code 스킬
+
+- `/fetch-videos` — YouTube RSS 피드에서 새 영상 감지 및 필터링
+- `/summarize-video <url>` — 단일 영상 자막 추출 및 요약
+- `/stock-monitor` — 전체 파이프라인 자동 실행 (감지 → 요약 → Slack → Notion)
+
+### 스케줄 자동화
+
+```
+/loop 1h /stock-monitor
+```
+
+1시간마다 자동으로 새 영상을 확인하고 처리합니다.
+
 ## 세션 시작 시
 
 세션이 시작되면 `.claude/scripts/check-env.sh` 스크립트가 자동 실행되어 환경 정보를 출력합니다:

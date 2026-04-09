@@ -1,0 +1,31 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWskYkV4c4S9D__rsfOl2JA",
+      "content_filters": ["개장전요것만", "월스트리트나우"]
+    },
+    {
+      "name": "한국경제TV",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCF8AeLlUbEpKju6v1H6p8Eg",
+      "content_filters": ["당잠사"]
+    },
+    {
+      "name": "증시각도기TV",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "content_filters": ["증시각도기"]
+    }
+  ],
+  "keywords": ["증시", "전망", "시황", "경제", "금리", "환율", "물가", "기준금리"],
+  "slack": {
+    "channel_id": "C0ARKUFPJJF",
+    "channel_name": "#경제소식"
+  },
+  "notion": {
+    "database_url": "https://www.notion.so/84678c8444774ef591e75bdf4fdba8db",
+    "data_source_id": "460605fe-18f2-4bfe-8534-4f5e265149f0"
+  }
+}
