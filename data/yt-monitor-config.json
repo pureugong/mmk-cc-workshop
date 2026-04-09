@@ -1,8 +1,8 @@
 {
   "channels": [
     {
-      "name": "채널명A",
-      "channel_id": "UCxxxxxxxxxxxxxxxxxxxxxxxx"
+      "name": "한경 모닝루틴",
+      "channel_id": "UCGCGxsbmG_9nincyI7xypow"
     }
   ],
   "filter_keywords": ["증시", "주식", "코스피", "코스닥", "시황", "매매", "투자", "분석"],
