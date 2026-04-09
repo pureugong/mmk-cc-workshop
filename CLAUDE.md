@@ -58,18 +58,21 @@ mmk youtube videotype <youtube-url>
 - `config/channels.json` — 채널, 키워드, Slack/Notion 설정
 - `data/processed_videos.json` — 처리 완료된 영상 ID 추적
 
-### 연동 서비스
+### 연동 서비스 (확인 완료)
 
-- **Slack**: #경제소식 채널 (MCP 도구 사용)
-- **Notion**: "증시 유튜브 요약" 데이터베이스 (MCP 도구 사용)
+- **Slack**: #경제소식 채널 (MCP `slack_send_message` 사용)
+  - 워크스페이스: `theeundol.slack.com`
+  - 채널 ID: `C0ARKUFPJJF`
+- **Notion**: "증시 유튜브 요약" 데이터베이스 (MCP `notion-create-pages` 사용)
   - DB URL: https://www.notion.so/84678c8444774ef591e75bdf4fdba8db
   - Data Source ID: `460605fe-18f2-4bfe-8534-4f5e265149f0`
+  - 스키마: 제목(Title), 채널(Select), 콘텐츠(Select), 요약(Text), URL, 업로드일(Date), 키워드(Multi-select), 처리일시(Created time)
 
-### Claude Code 스킬
+### Claude Code 커스텀 명령어 (`.claude/commands/`)
 
-- `/fetch-videos` — YouTube RSS 피드에서 새 영상 감지 및 필터링
-- `/summarize-video <url>` — 단일 영상 자막 추출 및 요약
-- `/stock-monitor` — 전체 파이프라인 자동 실행 (감지 → 요약 → Slack → Notion)
+- `/project:fetch-videos` — YouTube RSS 피드에서 새 영상 감지 및 필터링
+- `/project:summarize-video <url>` — 단일 영상 자막 추출 및 요약
+- `/project:stock-monitor` — 전체 파이프라인 자동 실행 (감지 → 요약 → Slack → Notion)
 
 ### 스케줄 자동화
 
