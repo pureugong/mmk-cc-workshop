@@ -1,0 +1,23 @@
+{
+  "channels": [
+    {
+      "id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "name": "한경글로벌마켓",
+      "keywords": []
+    },
+    {
+      "id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "name": "한국경제TV",
+      "keywords": []
+    },
+    {
+      "id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "name": "증시각도기TV",
+      "keywords": []
+    }
+  ],
+  "lookback_hours": 1,
+  "slack_channel": "#stock-alerts",
+  "notion_database_id": "",
+  "max_transcript_chars": 8000
+}
