@@ -1,0 +1,17 @@
+{
+  "channels": [
+    {
+      "name": "삼프로TV",
+      "url": "https://www.youtube.com/@3PROTV",
+      "channel_id": "UChlv4GSd7OQl3js-jkLOnFA"
+    },
+    {
+      "name": "슈카월드",
+      "url": "https://www.youtube.com/@syukaworld",
+      "channel_id": "UCsJ6RuBiTVWRX156FVbeaGg"
+    }
+  ],
+  "keywords": ["주식", "투자", "시장"],
+  "slack_channel": "#general",
+  "max_videos_per_check": 5
+}
