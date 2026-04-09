@@ -1,0 +1,25 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "content_keywords": ["개장전요것만", "월스트리트나우"]
+    },
+    {
+      "name": "한국경제TV",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "content_keywords": ["당잠사"]
+    },
+    {
+      "name": "증시각도기TV",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "content_keywords": ["증시각도기", "미국시황", "한국시황"]
+    }
+  ],
+  "topic_keywords": ["코스피", "나스닥", "S&P", "반도체", "AI", "금리", "환율", "매매", "실적", "ETF"],
+  "slack_channel": "mkk-workshop",
+  "slack_channel_id": "C0ARW7321KN",
+  "notion_db_id": "2ffefd7ae792443aa9a5490ae9f865f8",
+  "notion_data_source_id": "d68bdcec-9503-4ab8-b13e-530d40bdfa23",
+  "max_videos_per_scan": 5
+}
