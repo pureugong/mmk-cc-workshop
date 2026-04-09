@@ -10,7 +10,7 @@
     }
   ],
   "keywords": ["경제", "금리", "환율", "물가", "공급망", "무역", "분석", "전망"],
-  "slack_channel_id": "",
+  "slack_channel_id": "U077PRU5XPS",
   "notion_database_id": "4a4ce38b02334900b473aafeb2a8f2ea",
   "notion_data_source_url": "collection://cc4edc12-bd4b-4ee5-8662-0b28ae9fff0f"
 }
