@@ -1,0 +1,12 @@
+{
+  "channels": [
+    {
+      "name": "채널명A",
+      "channel_id": "UCxxxxxxxxxxxxxxxxxxxxxxxx"
+    }
+  ],
+  "filter_keywords": ["증시", "주식", "코스피", "코스닥", "시황", "매매", "투자", "분석"],
+  "slack_webhook_url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+  "notion_database_id": "YOUR_NOTION_DATABASE_ID",
+  "max_videos_per_channel": 5
+}
