@@ -1,3 +1,8 @@
+---
+name: generate-edu-insights
+description: 한국 교육의 방향에 대한 인사이트를 생성합니다. WebSearch와 YouTube 자막(mmk CLI)을 활용해 3가지 관점(교육방향, 학부모/학생, 선생님)으로 분석합니다.
+---
+
 # generate-edu-insights
 
 한국 교육의 방향에 대한 인사이트를 생성하는 스킬입니다.

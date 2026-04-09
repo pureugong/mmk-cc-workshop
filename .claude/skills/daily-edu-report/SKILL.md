@@ -1,3 +1,8 @@
+---
+name: daily-edu-report
+description: 매일 1회 실행되는 한국 교육 인사이트 자동화 루틴. WebSearch로 최신 교육 뉴스를 수집하고, 3가지 관점(교육방향/학부모학생/선생님)으로 분석한 후 Notion에 저장하고 Slack으로 전송합니다.
+---
+
 # daily-edu-report
 
 매일 1회 실행되는 통합 교육 인사이트 리포트 스킬입니다.
@@ -74,5 +79,5 @@ WebSearch와 mmk CLI를 활용하여 최신 한국 교육 인사이트를 생성
 
 ## 참고
 
-- Slack 채널을 새로 만든 경우 `send-slack-insight.md`와 이 파일의 channel_id를 모두 업데이트하세요
-- Notion 데이터베이스 ID가 변경되면 `save-notion-insight.md`와 이 파일의 data_source_id를 모두 업데이트하세요
+- Slack 채널을 새로 만든 경우 `send-slack-insight/SKILL.md`와 이 파일의 channel_id를 모두 업데이트하세요
+- Notion 데이터베이스 ID가 변경되면 `save-notion-insight/SKILL.md`와 이 파일의 data_source_id를 모두 업데이트하세요

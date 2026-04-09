@@ -1,3 +1,8 @@
+---
+name: save-notion-insight
+description: 생성된 교육 인사이트를 Notion 데이터베이스에 저장합니다. notion-create-pages MCP 도구를 사용합니다.
+---
+
 # save-notion-insight
 
 생성된 교육 인사이트를 Notion 데이터베이스에 저장하는 스킬입니다.

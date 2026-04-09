@@ -1,3 +1,8 @@
+---
+name: send-slack-insight
+description: 생성된 교육 인사이트를 Slack으로 전송합니다. slack_send_message MCP 도구를 사용하여 DM 또는 채널로 전송합니다.
+---
+
 # send-slack-insight
 
 생성된 교육 인사이트를 Slack으로 전송하는 스킬입니다.
