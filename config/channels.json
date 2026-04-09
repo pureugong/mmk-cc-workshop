@@ -1,0 +1,15 @@
+{
+  "channels": [
+    {
+      "id": "UCiYbaVEODktcsh09454Grow",
+      "name": "채널1"
+    },
+    {
+      "id": "UCtmQgT60VWIL5Z-R5phzd0Q",
+      "name": "채널2"
+    }
+  ],
+  "slack_channel": "#youtube-summary",
+  "summary_language": "ko",
+  "max_videos_per_run": 5
+}

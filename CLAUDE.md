@@ -41,6 +41,32 @@ mmk youtube videotype <youtube-url>
 - `mmk paymint ...` — 사용 불가
 - `mmk threads ...` — 사용 불가
 
+## 커스텀 슬래시 커맨드
+
+YouTube 채널 모니터링 자동화를 위한 커맨드들입니다.
+
+| 커맨드 | 설명 |
+|--------|------|
+| `/fetch-videos` | 등록된 채널의 새 영상 감지 |
+| `/summarize-video <url>` | 영상 자막 추출 + 한국어 요약 |
+| `/notify-slack` | 요약을 Slack `#youtube-summary`에 전송 |
+| `/save-notion` | 요약을 Notion DB에 저장 |
+| `/monitor` | 전체 파이프라인 (감지→요약→Slack→Notion) |
+
+### 스케줄링
+
+매일 자동 실행: `/loop 24h /monitor`
+
+### 설정
+
+- 채널 목록: `config/channels.json`
+- 처리 상태: `data/processed_videos.json`
+
+### MCP 의존성
+
+- **Slack MCP**: `#youtube-summary` 채널에 알림 전송
+- **Notion MCP**: "YouTube 영상 요약" 데이터베이스에 저장
+
 ## 세션 시작 시
 
 세션이 시작되면 `.claude/scripts/check-env.sh` 스크립트가 자동 실행되어 환경 정보를 출력합니다:
