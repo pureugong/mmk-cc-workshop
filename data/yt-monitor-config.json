@@ -1,0 +1,16 @@
+{
+  "channels": [
+    {
+      "name": "한경 모닝루틴",
+      "channel_id": "UCGCGxsbmG_9nincyI7xypow"
+    },
+    {
+      "name": "손경제",
+      "channel_id": "UCiYbaVEODktcsh09454Grow"
+    }
+  ],
+  "filter_keywords": ["증시", "주식", "코스피", "코스닥", "시황", "매매", "투자", "분석"],
+  "slack_webhook_url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+  "notion_database_id": "33d68c806e8f800cb42cd9b033975eff",
+  "max_videos_per_channel": 5
+}
